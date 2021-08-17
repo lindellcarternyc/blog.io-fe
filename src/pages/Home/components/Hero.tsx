@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ButtonLink from '../../../components/ButtonLink'
 import hero from '../../../images/hero.jpg'
 
 
@@ -33,15 +34,6 @@ const HeaderWrapper = styled.header`
       -webkit-text-stroke: 2px #fff;
     }
   }
-
-  a {
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: #000;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
 `
 
 const Hero = () => {
@@ -53,7 +45,7 @@ const Hero = () => {
           Blog
           <span className="no-fill"> writing</span>
         </h1>
-        <a href="/editor">write a blog</a>
+        <ButtonLink href="/editor">write a blog</ButtonLink>
       </div>
     </HeaderWrapper>
   )
