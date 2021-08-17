@@ -1,10 +1,13 @@
 import GlobalStyles from './styles/global'
+import Layout from './layout/Layout'
 
 const App = () => {
   return (
     <div>
       <GlobalStyles />
-      Hello
+      <Layout>
+        <span>Hello</span>
+      </Layout>
     </div>
   )
 }
