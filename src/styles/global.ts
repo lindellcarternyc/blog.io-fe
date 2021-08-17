@@ -14,6 +14,11 @@ const GlobalStyles = createGlobalStyle`
     position: relative;
     font-family: 'poppins', sans-serif;
   }
+
+  ::selection {
+    background-color: #1b1b1b;
+    color: #fff;
+  }
 `
 
 export default GlobalStyles
