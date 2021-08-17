@@ -1,12 +1,14 @@
 import GlobalStyles from './styles/global'
 import Layout from './layout/Layout'
 
+import HomePage from './pages/Home/HomePage'
+
 const App = () => {
   return (
     <div>
       <GlobalStyles />
       <Layout>
-        <span>Hello</span>
+        <HomePage />
       </Layout>
     </div>
   )
