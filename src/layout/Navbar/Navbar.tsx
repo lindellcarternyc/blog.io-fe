@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const NavbarWrapper = styled.nav`
-  border: 1px solid red;
   width: 100%;
   height: 60px;
   position: fixed;
