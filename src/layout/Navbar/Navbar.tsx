@@ -1,4 +1,13 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+
+const NavbarLink = styled(Link)`
+  padding: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  text-transform: none;
+  color: #000;
+`
 
 const NavbarWrapper = styled.nav`
   width: 100%;
@@ -16,14 +25,6 @@ const NavbarWrapper = styled.nav`
   ul {
     display: flex;
     list-style: none;
-
-    li a {
-      padding: 10px;
-      margin-left: 10px;
-      text-decoration: none;
-      text-transform: none;
-      color: #000;
-    }
   }
 `
   
@@ -33,10 +34,10 @@ const Navbar = () => {
       <img src="img/logo.png" alt="logo" />
       <ul>
         <li>
-          <a href="/">home</a>
+          <NavbarLink to="/">home</NavbarLink>
         </li>
         <li>
-          <a href="/editor">editor</a>
+          <NavbarLink to="/editor">editor</NavbarLink>
         </li>
       </ul>
     </NavbarWrapper>
