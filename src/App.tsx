@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyles from './styles/global'
 import Layout from './layout/Layout'
 
@@ -6,13 +7,15 @@ import EditorPage from './pages/Editor/EditorPage'
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <GlobalStyles />
       <Layout>
-        {/* <HomePage /> */}
-        <EditorPage />
+        <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/editor" exact component={EditorPage} />
+        </Switch>
       </Layout>
-    </div>
+    </Router>
   )
 }
 

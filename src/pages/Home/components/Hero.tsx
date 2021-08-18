@@ -45,7 +45,7 @@ const Hero = () => {
           Blog
           <span className="no-fill"> writing</span>
         </h1>
-        <ButtonLink href="/editor">write a blog</ButtonLink>
+        <ButtonLink to="/editor">write a blog</ButtonLink>
       </div>
     </HeaderWrapper>
   )
